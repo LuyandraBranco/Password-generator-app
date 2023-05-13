@@ -25,7 +25,7 @@ const numbers = "0123456789";
 const symbols = "!@#$%^&*()_+-=[]{}\\|;:'\",.<>/?";
 
 export function ContainerApp() {
-
+    
     const [passwordLength, setPasswordLength] = useState(0);
     const [includeUppercaseLetters, setIncludeUppercaseLetters] = useState(
         false
@@ -58,14 +58,10 @@ export function ContainerApp() {
     };
 
     function generatePassword() {
-        let passwordChars = "";
+        let passwordChars = lowercaseLetters;
 
         if (includeUppercaseLetters) {
             passwordChars += uppercaseLetters;
-        }
-
-        if (includeLowercaseLetters) {
-            passwordChars += lowercaseLetters;
         }
 
         if (includeNumbers) {
@@ -85,20 +81,21 @@ export function ContainerApp() {
 
         return password;
     }
+
     const handleGenerateButtonClick = () => {
         const password = generatePassword();
         setGeneratedPassword(password);
     };
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText(generatedPassword);
-      }
+    }
     return (
         <Container>
             <ContainerItem>
                 <Title>Password Generator</Title>
                 <ContainerPassword>
                     <Password>{generatedPassword}</Password>
-                    <HiOutlineClipboardDocument onClick={handleCopyToClipboard}/>
+                    <HiOutlineClipboardDocument onClick={handleCopyToClipboard} />
                 </ContainerPassword>
                 <ContainerElements>
                     <Text>
@@ -138,10 +135,8 @@ export function ContainerApp() {
                     </Elements>
 
                     <Strengt>
-                        <TitleContainer>Strengt</TitleContainer>
-                        {/* <ProgressBarContainer>
-                            <ProgressBar strength={passwordStrength} />
-                        </ProgressBarContainer> */}
+                        <TitleContainer>STRENGT</TitleContainer>
+                        
                     </Strengt>
                     <Button onClick={handleGenerateButtonClick}>Generate</Button>
                 </ContainerElements>

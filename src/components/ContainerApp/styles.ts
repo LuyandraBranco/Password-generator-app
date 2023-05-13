@@ -19,6 +19,16 @@ export const ContainerItem = styled.div`
     align-items: center;
     margin-top: 7rem;
 
+    @media screen and (max-width: 680px) {      
+        width: 97%;
+        margin-top: 4rem;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        width: 97%;
+    }
+
+  
 `;
 
 export const Title = styled.h4` 
@@ -33,6 +43,10 @@ export const Password = styled.h2`
     color: #fff;
     font-weight: 600;
     margin-left: 10%;
+
+    @media screen and (max-width: 680px) {      
+       font-size: 0.8rem;
+    }
 `;
 
 export const CounterNumber = styled.h2` 
@@ -68,6 +82,14 @@ export const ContainerPassword = styled.section`
         cursor: pointer;
     }
 
+    @media screen and (max-width: 680px) {      
+        width: 97%;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        width: 97%;
+    }
+
 `;
 
 export const ContainerElements = styled.section` 
@@ -81,6 +103,14 @@ export const ContainerElements = styled.section`
     align-items: center;
     flex-direction: column;
     color: #fff;
+
+    @media screen and (max-width: 680px) {      
+        width: 97%;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        width: 97%;
+    }
 
 `;
 
@@ -131,5 +161,6 @@ export const Button = styled.button`
     cursor: pointer;
     font-weight: 600;
 `;
+
 
 
