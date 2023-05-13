@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const ContainerItem = styled.div` 
 
     width: 75%;
-    height: 30rem;
+    height: 32rem;
     background: #14131a;
     margin: 0 auto;
     display: flex;
@@ -25,6 +25,14 @@ export const Title = styled.h4`
 
     color: #fff;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+`;
+
+export const Password = styled.h2` 
+
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10%;
 `;
 
 export const CounterNumber = styled.h2` 
@@ -57,6 +65,7 @@ export const ContainerPassword = styled.section`
         margin-right: 9%;
         color: #a3fead;
         font-size: 1.5rem;
+        cursor: pointer;
     }
 
 `;
@@ -122,3 +131,5 @@ export const Button = styled.button`
     cursor: pointer;
     font-weight: 600;
 `;
+
+

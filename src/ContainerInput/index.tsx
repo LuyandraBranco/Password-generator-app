@@ -4,13 +4,16 @@ import {
     Container
 } from './styles';
 
-export function ContainerInput({description}) {
+export function ContainerInput({ description, functionn, handleFunction }) {
     {
-        let description: String
+        let description: String;
     }
     return (
         <Container>
-           <InputCheckBox type= "checkbox"/> {description}
+            <InputCheckBox type="checkbox"
+                checked={functionn}
+                onChange = {handleFunction}
+            /> {description}
         </Container>
     )
 }
