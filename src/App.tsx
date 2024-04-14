@@ -1,12 +1,9 @@
-import React from 'react';
-import './globalStyles.css';
-import { ContainerApp } from './components/ContainerApp';
+import React from "react";
+import "./globalStyles.css";
+import { ContainerApp } from "./components/ContainerApp";
 
 function App() {
-
-  return (
-    <ContainerApp />
-  )
+  return <ContainerApp />;
 }
 
-export default App
+export default App;

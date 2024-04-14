@@ -9,7 +9,7 @@
 
     --font-weight-400: 400;
     --font-weight-600: 600;
-   
+
 }
 
 * {
@@ -24,6 +24,6 @@ body {
 }
 
 body,
-textarea{
+textarea {
     font-family: 'Roboto', sans-serif;
 }
